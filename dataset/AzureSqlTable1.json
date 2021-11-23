@@ -27,7 +27,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "MOVIE_REVIEW"
+			"table": "MOVIE_SCRAPED"
 		}
 	}
 }
