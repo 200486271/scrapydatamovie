@@ -8,7 +8,7 @@
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
-					"retry": 0,
+					"retry": 1,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
@@ -36,46 +36,50 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "Sentences",
 									"type": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Sentence",
+									"name": "Sentences",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
+									"name": "Sentiment",
 									"type": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Sentiment",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"type": "String",
-									"ordinal": 3
-								},
-								"sink": {
 									"name": "Score",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Scope",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
+									"name": "Absolute_data",
 									"type": "String",
-									"ordinal": 4
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Absolute_data",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							}
 						],
@@ -88,7 +92,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "blobinput",
+						"referenceName": "blobinputmodified",
 						"type": "DatasetReference"
 					}
 				],

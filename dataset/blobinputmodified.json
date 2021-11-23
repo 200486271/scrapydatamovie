@@ -1,0 +1,40 @@
+{
+	"name": "blobinputmodified",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragenew",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "scraped_ghost_busters_review.csv",
+				"container": "sentimentcsv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Sentences",
+				"type": "String"
+			},
+			{
+				"name": "Sentiment",
+				"type": "String"
+			},
+			{
+				"name": "Score",
+				"type": "String"
+			},
+			{
+				"name": "Absolute_data",
+				"type": "String"
+			}
+		]
+	}
+}
