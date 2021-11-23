@@ -1,0 +1,33 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Sentence",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sentiment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Score",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Absolute_data",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MOVIE_REVIEW"
+		}
+	}
+}
