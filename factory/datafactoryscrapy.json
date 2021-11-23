@@ -1,0 +1,9 @@
+{
+	"name": "datafactoryscrapy",
+	"location": "canadaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8084cd45-0170-432d-992f-c91909ed83df",
+		"tenantId": "da9a94b6-4681-49bc-bd7c-bab9eac0ad3c"
+	}
+}
